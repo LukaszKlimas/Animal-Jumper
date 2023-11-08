@@ -10,12 +10,13 @@ public class player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("witam");
+        Witam();
 
          rb = GetComponent<Rigidbody2D>();
+         Debug.Log (Suma(2,3));
         
     }
-
+   
     // Update is called once per frame
     void Update()
     {
@@ -29,5 +30,22 @@ public class player : MonoBehaviour
 
         // Apply movement to the Rigidbody
         rb.velocity = movement * moveSpeed;
+    }
+ void Witam()
+    {
+        Debug.Log("witam");
+
+
+          
+
+    
+    }
+    //napisz publiczną metode typu int która przyjmuje parametry będące zmiennymi typu int A i B, oraz zwraca sume tych zmiennych
+    //napisz metode która liczy sume A i B
+    public int Suma(int A, int B)
+    {
+        return A+B;
+        
+        
     }
 }
